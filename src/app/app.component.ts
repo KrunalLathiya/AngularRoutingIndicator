@@ -27,8 +27,6 @@ export class AppComponent {
     if (event instanceof NavigationEnd) {
       this._loadingBar.complete();
     }
-
-    // Set loading state to false in both of the below events to hide the loader in case a request fails
     if (event instanceof NavigationCancel) {
       this._loadingBar.stop();
     }
